@@ -1,0 +1,27 @@
+.inline-select {
+    position: relative;
+}
+
+.inline-select .MuiSelect-select {
+    padding: 0;
+    padding-right: 32px;
+}
+
+.inline-select .MuiOutlinedInput-notchedOutline {
+    border: none;
+}
+
+.inline-select .arrow {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    z-index: 0;
+}
+
+.inline-select .MuiSelect-icon {
+    display: none;
+}
+
+.c-primary .MuiOutlinedInput-root {
+    color: var(--color-primary) !important;
+}

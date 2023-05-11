@@ -1,0 +1,16 @@
+body {
+    background: #F5FCFF;
+    padding: 20px;
+    /* overflow: scroll;
+    width: 500px; */
+    margin: 0;
+    font-family: 'Montserrat',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

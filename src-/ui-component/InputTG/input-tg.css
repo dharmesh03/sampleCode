@@ -1,0 +1,54 @@
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-container .label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-secondary1);
+}
+
+.input-container .label .required {
+    font-size: 16px;
+    color: var(--color-primary);
+}
+
+.input-container .input {
+    margin-top: 10px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    background: var(--color-white);
+    border: 1px solid #E1DFEC;
+    border-radius: 50px;
+
+}
+
+.dashboard-mode.input-container .input {
+    border-radius: 10px;
+}
+
+
+.input-container .errored {
+    border: 1px solid #F75A52;
+}
+
+.input-container .error {
+    color: #F75A52;
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-container .icon {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+}

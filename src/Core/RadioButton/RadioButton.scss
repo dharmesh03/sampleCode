@@ -1,0 +1,57 @@
+@import '../Common/variable';
+
+.radio-button {
+  display: inline-flex;
+  margin-bottom: 5px;
+  .radio-button__control {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+    border-radius: 47px;
+    border: 1px solid $color-lighten;
+  }
+
+  .radio-button__input {
+    display: none;
+    position: absolute;
+    &:focus + .radio-button__control {
+      border: 1px solid $color-primary;
+    }
+    &:disabled {
+      & + .radio-button__control {
+        background: $color-lightest;
+        border-radius: 26px;
+      }
+    }
+    &:checked {
+      & + .radio-button__control {  
+        border-radius: 48px;
+        border: 4.5px solid $color-primary;
+        &:after {         
+          display: block;
+          position: absolute;
+         
+          background: $color-primary;
+          border-radius: 48px;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+
+  .radio-button__label {
+    font-weight: normal !important;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-darker;
+    font-family: Gilroy;
+    label {   
+      margin-bottom: 0;
+      color: $color-darker !important;
+    }
+  }
+}

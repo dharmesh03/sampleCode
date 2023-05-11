@@ -1,0 +1,19 @@
+.c-primary {
+    color: var(--color-primary) !important;
+}
+
+.bg-white {
+    background-color: #fff !important;
+}
+
+.c-grey {
+    color: #AFAFAF !important;
+}
+
+.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+
+.c-white {
+    color: #fff !important;
+}

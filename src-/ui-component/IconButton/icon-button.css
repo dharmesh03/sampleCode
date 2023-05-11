@@ -1,0 +1,17 @@
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon path {
+    fill: var(--color-primary);
+}
+
+.icon.active path {
+    fill: #fff;
+}
+
+.icon-button {
+    border-radius: 10px;
+}

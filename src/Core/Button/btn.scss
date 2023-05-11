@@ -1,0 +1,326 @@
+@import '../Common/variable';
+@import '../Common/mixin';
+
+.ae-button {
+  padding: 12px 20px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: $color-white;
+  background-color: $color-primary;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  font-family: 'Gilroy';
+  line-height: 22px;
+  max-height: 56px;
+  text-decoration: none !important;
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: unset;
+  }
+  &:focus-visible {
+    outline: 2px solid $color-primary;
+    outline-offset: 3px;
+  }
+  > * {
+    pointer-events: none;
+  }
+  &:hover {
+    outline: unset !important;
+    outline-offset: unset;
+  }
+  .spinner {
+    border: 4px solid $color-lightest;
+    border-top: 4px solid #377ef9;
+  }
+  @media (max-width: 1280px) {
+    padding: 10px 14px;
+    border-radius: 10px;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    padding: 8px 12px;
+    font-size: 14px !important;
+    border-radius: 8px;
+    i {
+      font-size: 16px;
+    }
+  }
+  &.primary {
+    background: $color-primary;
+    color: $color-white;
+    .spinner {
+      border: 4px solid $color-white;
+      border-top: 4px solid #86d0e6;
+    }
+    &:active,
+    &:hover {
+      background: #2573f8;
+    }
+  }
+  &.secondary {
+    background: $color-white;
+    .spinner {
+      border: 4px solid #377ef9;
+      border-top: 4px solid $color-lightest;
+    }
+  }
+  &.success {
+    background: $color-success;
+    .spinner {
+      border: 4px solid $color-white;
+      border-top: 4px solid #50d88e;
+    }
+  }
+  &.danger {
+    background: $color-error;
+    .spinner {
+      border: 4px solid $color-white;
+      border-top: 4px solid #ea6669;
+    }
+  }
+  &.warning {
+    background: $color-warning;
+    .spinner {
+      border: 4px solid $color-white;
+      border-top: 4px solid #f5c888;
+    }
+  }
+  &.info {
+    background: $color-light;
+    .spinner {
+      border: 4px solid $color-white;
+      border-top: 4px solid #86d0e6;
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 9px 16px;
+    font-weight: 400;
+  }
+  @media (max-width: 576px) {
+    padding: 7px 16px;
+  }
+
+  &:not(:where(.secondary, .primary)):hover {
+    filter: brightness(110%);
+    color: #fff !important;
+  }
+  &:not(:where(.secondary, .primary)):focus:not(:focus-visible) {
+    filter: brightness(110%);
+    color: #fff !important;
+  }
+  &.ip-bg {
+    background: #406ae8 !important;
+  }
+  &:disabled {
+    opacity: 0.4;
+  }
+  &.secondary {
+    color: $color-darkest;
+    border: 1px solid #e9e9eb;
+    background-color: $color-white;
+    i {
+      color: $color-darkest;
+    }
+    &:not(:where(.hover_focus_effect_1, .hover_focus_effect_2)) {
+      &:active:not(:focus-visible),
+      &:hover {
+        @include iconHover();
+        border: 1px solid transparent;
+        color: $color-darkest !important;
+        i {
+          color: $color-darkest !important;
+        }
+      }
+    }
+    &:disabled {
+      background: $color-lightest !important;
+      i {
+        color: $color-darker !important;
+      }
+    }
+  }
+  &.custom-btn-icon {
+    display: flex;
+    padding: 12px;
+    border-radius: 12px;
+    i.icons {
+      font-size: 24px;
+      display: flex;
+    }
+    &.small {
+      padding: 9px;
+      i.icons {
+        font-size: 20px;
+      }
+    }
+    &.secondary {
+      //background: #f1f2f6 !important;
+      i {
+        color: #6d6f7d !important;
+      }
+      &:not(:where(.hover_focus_effect_1, .hover_focus_effect_2)) {
+        &:active,
+        &:hover {
+          i {
+            color: $color-darkest !important;
+          }
+        }
+      }
+    }
+    .b-icon {
+      font-size: 30px !important;
+    }
+  }
+  &.exsmall {
+    padding: 6px 6px;
+    border-radius: 8px;
+  }
+  &.small {
+    padding: 9px 10px;
+    border-radius: 12px;
+    line-height: 20px;
+    i.icons {
+      font-size: 18px;
+    }
+    @media (max-width: 1280px) {
+      padding: 10px 12px;
+      font-size: 14px !important;
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      padding: 7px 10px;
+    }
+    @media (max-width: 768px) {
+      padding: 9px 12px;
+    }
+  }
+  &.large {
+    padding: 17px 40px;
+    border-radius: 16px;
+    font-weight: 600;
+    @media (max-width: 1280px) {
+      padding: 15px 30px;
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      padding: 13px 26px;
+      border-radius: 12px;
+    }
+    @media (max-width: 768px) {
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: 400;
+      font-size: 14px !important;
+    }
+    i {
+      font-weight: 500;
+    }
+  }
+  &.medium {
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    @media (max-width: 1280px) {
+      padding: 10px 12px;
+      border-radius: 10px;
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      padding: 8px 12px;
+      border-radius: 8px;
+    }
+    @media (max-width: 768px) {
+      padding: 9px 12px;
+    }
+    i {
+      font-weight: 500;
+    }
+  }
+  i.icons {
+    font-size: 20px;
+    line-height: 16px;
+    vertical-align: sub;
+  }
+
+  &.button-outline-icon {
+    color: #737f94;
+    background-color: #fff;
+    border: 1px solid #c4c9d8;
+    border-radius: 4px;
+
+    i {
+      color: #737f94;
+      margin-right: 5px;
+    }
+
+    &:hover {
+      color: #fff;
+      border-color: #2e6da4;
+
+      i {
+        color: #fff;
+      }
+    }
+  }
+  &.bt-block {
+    display: block;
+    width: 100%;
+  }
+}
+.ae-button.reserved-button {
+  padding: 9px 14px;
+  @media (max-width: 1280px) {
+    padding: 7px 12px;
+    font-size: 14px !important;
+  }
+}
+.button.preview-button {
+  padding: 6px 14px;
+}
+.prev-icon {
+  i {
+    margin: 0 10px 0 0;
+    @media (max-width: 1200px) {
+      margin: 0 5px 0 0;
+    }
+  }
+  &.exsmall {
+    i {
+      margin-right: 3px;
+    }
+  }
+}
+.next-icon {
+  i {
+    margin: 0 0 0 10px;
+    @media (max-width: 1200px) {
+      margin: 0 0 0 5px;
+    }
+  }
+}
+.no-ltb-border-radius {
+  border-radius: 0 8px 8px 0;
+}
+.button-height-unset {
+  max-height: unset;
+}
+.btn {
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: unset;
+  }
+  &:focus-visible {
+    outline: 2px solid $color-primary;
+    outline-offset: 3px;
+    border-radius: 1px;
+  }
+}
+
+.btn-show-loader {
+  left: 0 !important;
+  right: 0 !important;
+  margin: 2px auto auto auto !important;
+}
+
+.btn-opacity-0 {
+  opacity: 0 !important;
+}

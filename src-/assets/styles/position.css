@@ -1,0 +1,27 @@
+.top-15 {
+    top: 15px;
+}
+
+.right-15 {
+    right: 15px;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.top-45 {
+    top: 45px !important;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}

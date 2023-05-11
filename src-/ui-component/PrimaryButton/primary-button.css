@@ -1,0 +1,98 @@
+.btn-primary {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 56px;
+    width: 100%;
+    color: white;
+    background: var(--color-primary);
+    border: none;
+    border-radius: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.inner-btn {
+    display: flex;
+    align-items: center;
+}
+
+.inner-btn span {
+    display: flex;
+    padding-right: 10px;
+
+}
+
+.circular-loader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    left: 20px;
+    -webkit-animation: rotate 2s linear infinite;
+    animation: rotate 2s linear infinite;
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+
+.loader-path {
+    stroke-dasharray: 150, 200;
+    stroke-dashoffset: -10;
+    -webkit-animation: dash 1.5s ease-in-out infinite;
+    animation: dash 1.5s ease-in-out infinite;
+    stroke-linecap: round;
+}
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124;
+    }
+}

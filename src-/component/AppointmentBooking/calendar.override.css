@@ -1,0 +1,12 @@
+.MuiPickersDay-root.Mui-selected {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.MuiPickersArrowSwitcher-spacer {
+    width: 5px;
+}
+
+.MuiPickersArrowSwitcher-button svg {
+    fill: var(--color-primary);
+}

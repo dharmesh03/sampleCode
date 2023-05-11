@@ -1,0 +1,202 @@
+@import '../Common/variable';
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #35374b;
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.input {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  font-family: Gilroy;
+  font-size: 14px;
+  line-height: 22px;
+  color: $color-secondary !important;
+  background-color: $color-white !important;
+  background-image: none;
+  border: 1px solid $color-lighter;
+  border-radius: 8px !important;
+  background-clip: padding-box;
+  border-width: 1px;
+  box-shadow: none;
+  outline: 0;
+  &::placeholder {
+    color: $color-darker !important;
+  }
+  &.focused {
+    &:focus {
+      border-color: $color-primary !important;
+      outline-offset: 0px !important;
+      outline: none !important;
+    }
+  }
+}
+.react-numeric-input {
+  width: 100% !important;
+}
+.react-numeric-input input {
+  display: block !important;
+  width: 100% !important;
+  padding: 10px 15px;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  color: $color-secondary;
+  background-color: $color-white;
+  background-image: none;
+  border: 1px solid $color-lighter;
+  border-radius: 8px !important;
+  background-clip: padding-box;
+  border-width: 1px !important;
+  box-shadow: none;
+  outline: 0;
+  &.focused {
+    &:focus {
+      border-color: $color-primary !important;
+    }
+  }
+}
+.react-numeric-input .error-input {
+  border-color: $color-error !important;
+  &.focused {
+    &:focus {
+      border-color: $color-error !important;
+    }
+  }
+}
+.error-input {
+  border-color: $color-error !important;
+  &.focused {
+    &:focus {
+      border-color: $color-error !important;
+    }
+  }
+}
+.react-numeric-input .valid-input {
+  &.focused {
+    &:focus {
+      border-color: $color-primary !important;
+    }
+  }
+}
+.error-text,
+.error-card-text {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.8em;
+  color: $color-dark;
+  i {
+    margin-right: 5px;
+  }
+  &.error_text_character {
+    position: absolute;
+    right: 1px;
+    top: 100%;
+  }
+}
+
+.textRed {
+  white-space: break-spaces !important;
+  color: $color-error;
+}
+
+.input::placeholder {
+  color: $color-darker;
+}
+
+.select-input {
+  padding: 13px 16px !important;
+  height: 48px !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #1e2137 !important;
+  border-radius: 8px !important;
+  border: 1px solid #e9e9eb !important;
+}
+.input-icon-box {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  .input-icon {
+    text-align: center;
+    display: inline-grid;
+    align-items: center;
+    border-radius: 6px;
+    width: 38px;
+    height: 30px;
+    position: absolute;
+    bottom: 6px;
+    right: 10px;
+    margin: 0;
+    i {
+      color: $color-darker;
+      font-size: 16px;
+      margin: auto;
+    }
+  }
+  .input-currencySymbol {
+    text-align: center;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 100%;
+    position: absolute;
+    bottom: 0px !important;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-primary;
+  }
+}
+.inputLabel-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-darkest;
+  margin-bottom: 5px;
+}
+.numeric-padding {
+  padding: 10px 15px !important;
+}
+.numericSymbol-padding {
+  padding-left: 36px !important;
+}
+.has-success {
+  border-color: $color-primary !important;
+  &.focused {
+    &:focus {
+      border-color: $color-primary !important;
+    }
+  }
+}
+.has-error {
+  border-color: $color-lightest !important;
+  &.focused {
+    &:focus {
+      border-color: $color-lightest !important;
+    }
+  }
+}
+.desabled,
+.disable-tel {
+  color: $color-dark !important;
+  border: 1px solid $color-lighter !important;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #fafafc !important;
+  &::placeholder {
+    color: $color-dark !important;
+  }
+}

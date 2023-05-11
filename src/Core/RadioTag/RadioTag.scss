@@ -1,0 +1,25 @@
+@import '../Common/variable';
+
+.radio-tag-btn {
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  border-radius: 12px;
+  .radio-tag-input {
+    display: none;
+    pointer-events: none;
+  }
+  &.normal {
+    padding: 13px 62px;
+  }
+  &.lable-checked {
+    font-weight: 600;
+    color: #406ae8 !important;
+    border: 1.5px solid rgba(64, 106, 232, 0.8) !important;
+    background-color: rgba(64, 106, 232, 0.05);
+  }
+  &.label-border {
+    border: 1px solid #e9e9eb;
+  }
+}

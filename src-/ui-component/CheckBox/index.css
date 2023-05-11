@@ -1,0 +1,84 @@
+
+.check-button {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.check-button .check-button__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.check-button__control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-dark-gray);
+    border-radius: 5px;
+}
+
+.check-button:hover .check-button__input ~ .check-button__control {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-dark-gray);
+}
+
+.check-button .check-button__input:checked ~ .check-button__control {
+    background-color: var(--color-primary);
+}
+
+.check-button__control:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-button .check-button__input:checked ~ .check-button__control:after {
+    display: block;
+}
+
+.check-button .check-button__control:after {
+    left: 9px;
+    top: 3px;
+    width: 4px;
+    height: 10px;
+    border: solid var(--color-white);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.chekkbox-label {
+    color: var(--color-secondary1);
+}
+
+.form-control .icon {
+    position: absolute;
+    top: 0;
+    left: 8px;
+}
+
+.form-control {
+    cursor: pointer;
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--color-secondary1);
+}

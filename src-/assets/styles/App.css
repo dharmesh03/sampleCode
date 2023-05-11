@@ -1,0 +1,113 @@
+@import "./variable.css";
+@import "./layout.css";
+@import "./spacing.css";
+@import "./shadow.css";
+@import "./border.css";
+@import "./colors.css";
+@import "./dimensions.css";
+@import "./position.css";
+
+.container {
+  background: var(--color-white);
+  border: 1px solid #e1dfec;
+  border-radius: 25px;
+  padding: 20px 40px;
+}
+
+.line {
+  height: 1px;
+  background: #e1dfec;
+  width: 100%;
+}
+
+.or-description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  color: var(--Sec-Grey);
+  min-width: 180px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.top-45 {
+  top: 45px !important;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  background: white;
+  border-radius: 4px;
+  border: 2px solid var(--color-primary);
+  color: white;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background: var(--color-primary);
+}
+
+.form-control .icon {
+  position: absolute;
+  top: 0;
+  left: 8px;
+}
+
+.form-control {
+  cursor: pointer;
+  position: relative;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: var(--color-secondary1);
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.tag {
+  background: #f4f4f4;
+  padding: 10px 20px;
+  border-radius: 24px;
+}
+
+
+.header-action-block {
+  padding-right: 80px;
+}
+.progress-bar{
+    border: 1px solid #E1DFEC;
+    padding: 16px;
+    border-radius: 10px;
+    width: auto !important;
+    margin-left: 0 !important;
+    margin-top:8px;
+    display:flex;
+}
+
+@media screen and (max-width: 1440px) {
+  .header-action-block {
+    padding-right: 35px;
+  }
+}
+
+.MuiCardContent-root:last-child {
+  padding-bottom: 16px !important;
+}

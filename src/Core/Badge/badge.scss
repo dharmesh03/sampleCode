@@ -1,0 +1,66 @@
+@import '../Common/variable';
+
+span.ae-badge {
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  letter-spacing: 0;
+  line-height: 15px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-align: center;
+  padding: 7px 10px;
+  margin: 3px;
+  vertical-align: middle;
+  &.primary {
+    background-color: $color-primary;
+  }
+  &.info {
+    background: $color-light;
+  }
+  &.secondary {
+    background: $color-lighter;
+    color: #455570 !important;
+  }
+  &.success {
+    background: $color-success;
+  }
+  &.warning {
+    background: $color-warning;
+  }
+  &.danger {
+    background: $color-error;
+  }
+  &.large {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  &.medium {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  &.normal {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  &.small {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  &.style2 {
+    &.primary {
+      background-color: #f5f7fe;
+      color: $color-primary;
+    }
+    &.secondary {
+      background-color: $color-background;
+      color: $color-darker !important;
+    }
+    &.warning {
+      background-color: #fefaf2;
+      color: $color-warning;
+    }
+  }
+}

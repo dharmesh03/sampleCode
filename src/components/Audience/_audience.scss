@@ -1,0 +1,154 @@
+@import '../../sass/variable';
+
+.audience {
+  .ae-button {
+    i.icons {
+      font-size: unset;
+    }
+    &.custom {
+      color: $color-prime;
+      background: unset;
+    }
+  }
+  .select-box-audience {
+    width: 100%;
+  }
+  .icon-position {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    z-index: 3;
+    padding: 24px 24px 24px 24px;
+    background-color: #ffffff;
+    .column-setting-icon {
+      font-size: 18px;
+      &.ac-icon-settings:before {
+        font-weight: 600 !important;
+      }
+      &.disabled {
+        pointer-events: none;
+      }
+    }
+  }
+  .react-bs-table-container {
+    .react-bs-table {
+      overflow: hidden;
+      overflow: scroll;
+      padding-bottom: 8px;
+      &.empty-column {
+        height: 48px !important;
+      }
+      .react-bs-container-header {
+        table.table {
+          margin: 0px;
+          table-layout: fixed !important;
+          thead {
+            tr th {
+              color: #6d6f7d;
+              font-family: 'Gilroy';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 22px;
+              padding: 24px;
+            }
+            .last-column-header {
+              padding-right: 70px;
+            }
+          }
+        }
+      }
+      .react-bs-container-body {
+        .table {
+          margin: 0px;
+          tbody {
+            .trClassFormat {
+              border-bottom: 1px solid #f1f2f6;
+              td {
+                padding: 24px !important;
+              }
+            }
+          }
+        }
+      }
+      &::-webkit-scrollbar {
+        height: 8px;
+      }
+      &::-webkit-scrollbar-track {
+        border-radius: 23px !important;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #a5a6af;
+        border-radius: 23px !important;
+      }
+    }
+    .react-bs-table-pagination {
+      margin: 42px 0px 0px 0px;
+    }
+  }
+}
+
+.audience-modal-body {
+  word-wrap: break-word;
+}
+.ae-slide-popup {
+  .audience-analytics-sidebar-popup {
+    .heading-bottom-line {
+      padding: 0px 0px 16px 0px;
+      justify-content: unset !important;
+      column-gap: 40px;
+      & > div:first-child {
+        margin: 0px !important;
+        flex-grow: 1;
+        & > span:first-child {
+          padding: 0px !important;
+        }
+      }
+    }
+    .event-container {
+      margin-top: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #f1f2f6;
+      .image-event {
+        border-radius: 16px;
+      }
+    }
+    .tab-content {
+      .audience-orders {
+        .order-panel-white-box {
+          .order-panel {
+            .order-panel-header {
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 5px;
+            }
+            .order-panel-body {
+              .order-details-section {
+                display: flex;
+                flex-direction: column;
+              }
+              .order-ticket-details {
+                margin: 20px 0px;
+              }
+            }
+          }
+        }
+      }
+      .ae-image-label {
+        .ae-content {
+          .ae-label {
+            .ae-subtitle2 {
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      .attendee-analysis-text {
+        .line-space {
+          margin: 11px 0px 26px 0px;
+        }
+      }
+    }
+  }
+}

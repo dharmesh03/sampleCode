@@ -1,0 +1,20 @@
+.b-r-10 {
+    border-radius: 10px;
+}
+
+.border-primary {
+    border: 1px solid var(--color-primary);
+}
+
+.b-r-26 {
+    border-radius: 26px;
+}
+
+.b-r-50 {
+    border-radius: 50%;
+}
+
+.no-border {
+    border: none;
+}
+

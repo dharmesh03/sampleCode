@@ -1,0 +1,53 @@
+@import '../Common/variable';
+
+.ae-input-color {
+  label {
+    color: $color-darker;
+  }
+  .ae-theme-color-picker {
+    position: relative;
+    input.color-text-box {
+      color: $color-darkest;
+      font-family: Gilroy;
+    }
+    .color-pic {
+      border: 1px solid;
+      border-color: #e7ebee;
+      border-radius: 50%;
+      position: absolute;
+      right: 15px;
+      top: 0;
+      bottom: 0;
+      padding: 0px;
+      width: 24px;
+      height: 24px;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .form-control {
+      border-radius: 8px;
+      background-clip: padding-box;
+      border-color: #e7ebee;
+      border-width: 1px;
+      box-shadow: none;
+      font-family: Gilroy;
+      font-style: normal;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    .color-text-box {
+      background-color: #fff;
+    }
+
+    .div-view-height {
+      height: 40px;
+    }
+
+    .popover-box {
+      position: absolute;
+      z-index: 12;
+    }
+  }
+}

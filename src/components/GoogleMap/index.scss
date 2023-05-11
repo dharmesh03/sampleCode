@@ -1,0 +1,27 @@
+.recurring-event-dates {
+    border: 1px solid #e9e9eb;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    height: 56px;
+    &.selected-date {
+      background: rgba(64, 106, 232, 0.05);
+      border: 1px solid rgba(64, 106, 232, 0.8);
+      box-sizing: border-box;
+      border-radius: 10px;
+      .date-header {
+        font-weight: 600;
+        color: #1e2137 !important;
+        line-height: 19px;
+      }
+    }
+  }
+  .recurring-event-map {
+    iframe {
+      min-height: calc(100vh - 117px);
+    }
+  }
+  

@@ -1,0 +1,180 @@
+@import '../../../sass/variable';
+
+#audience-column-selection {
+  &.modal {
+    @media screen and (min-height: 720px) {
+      display: flex !important;
+      align-items: center;
+    }
+  }
+}
+
+.modal {
+  &.ae-popup.style2 {
+    .audience-column-selection-popup {
+      &.modal-dialog {
+        width: 936px;
+        .modal-content {
+          display: flex;
+          flex-direction: column;
+          height: calc(100vh - 100px);
+          padding: 32px 0px 32px 32px;
+          .modal-header {
+            padding: 0px;
+          }
+          .modal-body {
+            padding: 0px;
+            .body-container {
+              margin: 10px 0px 0px 0px;
+
+              .column-options-list {
+                border-right: 1px solid #e9e9eb;
+                padding: 0px 24px 0px 0px;
+                --mask-image-content: linear-gradient(0deg, rgba(255, 255, 255, 0) -10.47%, #ffffff 15.35%);
+                --mask-size-content: auto 100%;
+                --mask-image-scrollbar: linear-gradient(black, black);
+                --mask-size-scrollbar: 5px 100%;
+                -webkit-mask-image: var(--mask-image-content), var(--mask-image-scrollbar);
+                mask-image: var(--mask-image-content), var(--mask-image-scrollbar);
+                -webkit-mask-size: var(--mask-size-content), var(--mask-size-scrollbar);
+                mask-size: var(--mask-size-content), var(--mask-size-scrollbar);
+                -webkit-mask-position: 0 0, 100% 0;
+                mask-position: 0 0, 100% 0;
+                -webkit-mask-repeat: no-repeat, no-repeat;
+                mask-repeat: no-repeat, no-repeat;
+                .scrollbar-content {
+                  @media screen and (min-height: 720px) {
+                    height: 280px !important;
+                  }
+                  max-height: unset !important;
+                  .--scroll-view {
+                    max-height: unset !important;
+                    height: inherit;
+                  }
+                }
+                .ae-search-box {
+                  margin: 16px 0px 0px 0px;
+                  .input-group {
+                    width: 100%;
+                  }
+                }
+                .check-button {
+                  .check-button__control {
+                    margin: 0px 8px 0px 0px;
+                  }
+                }
+              }
+              .selected-column-list {
+                padding-left: 24px;
+                --mask-image-content: linear-gradient(0deg, rgba(255, 255, 255, 0) -10.47%, #ffffff 15.35%);
+                --mask-size-content: auto 100%;
+                --mask-image-scrollbar: linear-gradient(black, black);
+                --mask-size-scrollbar: 5px 100%;
+                -webkit-mask-image: var(--mask-image-content), var(--mask-image-scrollbar);
+                mask-image: var(--mask-image-content), var(--mask-image-scrollbar);
+                -webkit-mask-size: var(--mask-size-content), var(--mask-size-scrollbar);
+                mask-size: var(--mask-size-content), var(--mask-size-scrollbar);
+                -webkit-mask-position: 0 0, 100% 0;
+                mask-position: 0 0, 100% 0;
+                -webkit-mask-repeat: no-repeat, no-repeat;
+                mask-repeat: no-repeat, no-repeat;
+                .scrollbar-content {
+                  @media screen and (min-height: 720px) {
+                    height: 350px !important;
+                  }
+                  max-height: 100% !important;
+                  .--scroll-view {
+                    max-height: unset !important;
+                    height: inherit;
+                    margin: 0px 10px 0px 0px !important;
+                  }
+                }
+                .selected-column-container {
+                  display: flex;
+                  align-items: center;
+                  background: #f7f7fa;
+                  border-radius: 6px;
+                  padding: 12px 15px;
+                  margin: 0px 0px 12px 0px;
+                  &:hover {
+                    .ae-button {
+                      &.custom {
+                        visibility: visible;
+                      }
+                    }
+                  }
+                  .icons {
+                    padding: 4px 0px 0px 6px;
+                    margin: 0px 8px 0px 0px;
+                  }
+                  .ac-icon-close {
+                    color: #6d6f7d;
+                    &.ml-auto {
+                      margin-left: auto;
+                    }
+                  }
+                  .ae-button {
+                    margin-left: auto;
+                    margin: 0px 26px 0px auto;
+                    &.custom {
+                      visibility: hidden;
+                      color: $color-prime;
+                      background: unset;
+                      padding: 0px;
+                      font-family: Gilroy;
+                      font-style: normal;
+                      font-weight: 500;
+                      line-height: 22px;
+                      display: flex;
+                      &:hover {
+                        color: $color-prime !important;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .modal-footer {
+            padding: 0px 31px 0px 0px;
+            margin: 25px 0px 0px 0px;
+            .ae-button {
+              &.custom {
+                margin: 0px auto 0px 0;
+                color: $color-prime;
+                background: unset;
+                padding: 0px;
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 22px;
+                font-size: 16px;
+                &:hover {
+                  color: $color-prime !important;
+                }
+              }
+              &.custom-btn-size {
+                width: 123px;
+                height: 48px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-height: 720px) {
+  .modal {
+    &.ae-popup.style2 {
+      .audience-column-selection-popup {
+        &.modal-dialog {
+          .modal-content {
+            height: 588px;
+          }
+        }
+      }
+    }
+  }
+}
